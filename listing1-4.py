@@ -1,26 +1,27 @@
-# Spacewalk 
-# Sterling Clark 
+# Space Walk
+# Sterling Clark
 # https://github.com/Sterlingclark
 
 WIDTH = 800
 HEIGHT = 600
-player_x = 500
-player_y = 550
+player_x = 600
+player_y = 350
 
-def draw():
+def game_loop():
     screen.blit(images.backdrop, (0, 0))
-    screen.bilt(images.astronaut, (player_x, player_y))
+    screen.blit(images.mars, (50, 50))
+    screen.blit(images.astronaut, (player_x, player_y))
     screen.blit(images.ship, (550, 300))
 
-    def game_loop():
-      global player_x, player_y
-      if keyboard.right:
+def game_loop():
+    global player_x, player_y
+    if keyboard.right:
         player_x += 5
-      elif keyboard.left:
+    elif keyboard.left:
         player_x -= 5
-      elif keyboard.up:
+    elif keyboard.up:
         player_y -= 5
-      elif keyboard.down:
+    elif keyboard.down:
         player_y += 5
 
 clock.schedule_interval(game_loop, 0.03)
