@@ -62,7 +62,7 @@ GAME_MAP += [
         [FRIEND1_NAME + "'s sleeping quarters", 9, 11, True, True], # room 46
         [FRIEND2_NAME + "'s sleeping quarters", 9, 11, True, True], # room 47
         ["The pipeworks", 13, 11, True, False], # room 48
-        ["The chief scientist's office", 9, 7, True, True] # room 49
+        ["The chief scientist's office", 9, 7, True, True], # room 49
         ["The robot workshop", 9, 11, True, False] # room 50
         ]
 
