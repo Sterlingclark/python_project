@@ -29,7 +29,7 @@ DEMO_OBJECTS = [images.floor, images.pillar, images.soil]
 
 MAP_WIDTH = 5
 MAP_HEIGHT = 10
-MAP_SIZE = MAP_WIDTH + MAP_HEIGHT
+MAP_SIZE = MAP_WIDTH * MAP_HEIGHT
 
 GAME_MAP = [["Room 0 - where unsuded objects are kept", 0, 0, False, False]]
 
