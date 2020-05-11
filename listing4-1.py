@@ -31,7 +31,7 @@ MAP_WIDTH = 5
 MAP_HEIGHT = 10
 MAP_SIZE = MAP_WIDTH * MAP_HEIGHT
 
-GAME_MAP = [["Room 0 - where unsuded objects are kept", 0, 0, False, False]]
+GAME_MAP = [["Room 0 - where unused objects are kept", 0, 0, False, False]]
 
 outdoor_rooms = ramge(1, 26)
 for planetsectors in range(1, 26):  # rooms 1 to 25 are generated here
