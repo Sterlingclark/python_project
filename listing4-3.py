@@ -28,7 +28,7 @@ DEMO_OBJECTS = [images.floor, images.pillar, images.soil]
 ###############
 
 MAP_WIDTH = 5
-MAP_HEIGHT = 10
+MAP_HEIGHT = 11
 MAP_SIZE = MAP_WIDTH * MAP_HEIGHT
 
 GAME_MAP = [ ["Room 0 - where unused objects are kept", 0, 0, False, False] ]
@@ -63,7 +63,12 @@ GAME_MAP += [
         [FRIEND2_NAME + "'s sleeping quarters", 9, 11, True, True], # room 47
         ["The pipeworks", 13, 11, True, False], # room 48
         ["The chief scientist's office", 9, 7, True, True], # room 49
-        ["The robot workshop", 9, 11, True, False] # room 50
+        ["The robot workshop", 9, 11, True, False], # room 50
+        ["Secret Passageway", 9, 15, True, True], # room 51
+        ["Secret Passageway", 9, 9, False, True], # room 52
+        ["Secret Passageway", 9, 15, False, True], # room 53
+        ["Secret Passageway", 9, 9, False, True], # room 54
+        ["Secret Passageway", 9, 15, True, False] # room 55
         ]
 
 # simple sanity check on ap above to check data entry
@@ -159,7 +164,7 @@ def draw():
 def movement():
     global current_room
     old_room = current_room
-    
+
     if keyboard.left:
         current_room -= 1
     if keyboard.right:
@@ -169,8 +174,8 @@ def movement():
     if keyboard.down:
         current_room += MAP_WIDTH
         
-    if current_room > 50:
-        current_room = 50
+    if current_room > 55:
+        current_room = 55
     if current_room < 1:
         current_room = 1
 
@@ -178,3 +183,4 @@ def movement():
         print("Entering room:" + str(current_room))
 
 clock.schedule_interval(movement, 0.08)
+
