@@ -10,5 +10,8 @@ planets = { "Mercury": "The smallest planet, nearest the Sun",
             }
 
 while True:
-   query = input("Which planet would you like information on?")
-   print(planets[query])
+    query = input("Which planet would you like information on?")
+    if query in planets.keys():
+        print(planets[query])
+    else:
+        print("No data available! Sorry!")
