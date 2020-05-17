@@ -179,6 +179,12 @@ def draw():
     global room_height, room_width, room_map
     generate_map()
     screen.clear()
+    room_map[2][4] = 7
+    room_map[2][6] = 6
+    room_map[1][1] = 8
+    room_map[1][2] = 9
+    room_map[1][8] = 12
+    room_map[1][9] = 9
 
     for y in range(room_height):
         for x in range(room_width):
