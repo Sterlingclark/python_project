@@ -31,7 +31,7 @@ LANDER_Y = random.randint(2, 11)
 ###############
 
 MAP_WIDTH = 5
-MAP_HEIGHT = 11
+MAP_HEIGHT = 10
 MAP_SIZE = MAP_WIDTH * MAP_HEIGHT
 
 GAME_MAP = [ ["Room 0 - where unused objects are kept", 0, 0, False, False] ]
@@ -67,11 +67,6 @@ GAME_MAP += [
         ["The pipeworks", 13, 11, True, False], # room 48
         ["The chief scientist's office", 9, 7, True, True], # room 49
         ["The robot workshop", 9, 11, True, False], # room 50
-        ["Secret Passageway", 9, 15, True, True], # room 51
-        ["Secret Passageway", 9, 9, False, True], # room 52
-        ["Secret Passageway", 9, 15, False, True], # room 53
-        ["Secret Passageway", 9, 9, False, True], # room 54
-        ["Secret Passageway", 9, 15, True, False] # room 55
         ]
 
 # simple sanity check on ap above to check data entry
@@ -406,4 +401,3 @@ def movement():
         print("Entering room:" + str(current_room))
 
 clock.schedule_interval(movement, 0.08)
-
