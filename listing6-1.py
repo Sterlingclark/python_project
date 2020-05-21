@@ -392,8 +392,8 @@ def movement():
     if keyboard.down:
         current_room += MAP_WIDTH
         
-    if current_room > 55:
-        current_room = 55
+    if current_room > 50:
+        current_room = 50
     if current_room < 1:
         current_room = 1
 
