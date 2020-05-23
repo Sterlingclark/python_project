@@ -286,11 +286,11 @@ assert check_counter == 161, "Expected 161 scenery items"
 assert checksum == 200095, "Error in scenery data"
 print("Scenery checksum: " + str(checksum))
 
-for room in range(1, 26): # Add random scener in plaent locations.
-    if room != 13: #Skip room 13.
-    scenery_item = random.choice([16, 28, 29, 30])
-    scenery[room] = [[scenery_item, random.randint(2, 10),
-                      random.ranint(2, 10)]]
+for room in range(1, 26): # Add random scenery in planet locations.
+    if room != 13: # Skip room 13.
+        scenery_item = random.choice([16, 28, 29, 30])
+        scenery[room] = [[scenery_item, random.randint(2, 10),
+                          random.ranint(2, 10)]]
 
 # Use loops to add fences to the planet surface rooms.
 for room_coordinate in range(0, 13):
