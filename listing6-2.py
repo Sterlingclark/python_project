@@ -287,7 +287,7 @@ assert checksum == 200095, "Error in scenery data"
 print("Scenery checksum: " + str(checksum))
 
 for room in range(1, 26): # Add random scener in plaent locations.
-    if room != 13 #Skip room 13.
+    if room != 13: #Skip room 13.
     scenery_item = random.choice([16, 28, 29, 30])
     scenery[room] = [[scenery_item, random.randint(2, 10),
                       random.ranint(2, 10)]]
